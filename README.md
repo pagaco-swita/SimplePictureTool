@@ -11,6 +11,7 @@ A simple GUI that using the ImageMagick software, for batch processing of .PNG o
 * ImageMagick - https://imagemagick.org/index.php
 
 #### Get the latest build of SimplePictureTool for Linux:<br />
+<a href="https://github.com/pgc062020/SimplePictureTool/releases">https://github.com/pgc062020/SimplePictureTool/releases</a>
 <p>
   <a href="https://github.com/pgc062020/SimplePictureTool/releases">
       <img src="https://github.com/pgc062020/DailyDesktopWallpaperPlus/blob/main/Screenshots/ch.png" alt="download">
