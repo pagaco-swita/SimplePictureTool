@@ -1,0 +1,13 @@
+simplepicturetool (0.0.2-1) UNRELEASED; urgency=medium
+
+  * Progressbar object in the QWidget of MainWindow removed.
+  * Addition: Display progressbar with QProgressDialog
+  * This release closes no bug.
+
+ -- Patrice Coni <patrice.coni-dev@yandex.com>  Sun, 20 Nov 2022 10:53:54 +0100
+
+simplepicturetool (0.0.1-1) unstable; urgency=medium
+
+  * Initial release.
+
+ -- Patrice Coni <patrice.coni-dev@yandex.com>  Sun, 02 Oct 2022 23:37:26 +0200

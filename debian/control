@@ -1,0 +1,18 @@
+Source: simplepicturetool
+Section: graphics
+Priority: optional
+Maintainer: Patrice Coni <patrice.coni-dev@yandex.com>
+Build-Depends: debhelper-compat (= 13), libkf5filemetadata-dev, locales, qt5-qmake-bin, libkf5coreaddons-dev, libkf5config-dev, qtbase5-dev, tzdata, qtchooser, qt5-qmake, libqt5opengl5-dev, baloo-kf5-dev, qtbase5-dev-tools
+Standards-Version: 4.5.1
+Homepage: https://github.com/pagaco-swita/SimplePictureTool
+Rules-Requires-Root: no
+
+Package: simplepicturetool
+Architecture: any
+Depends: imagemagick, libqt5gui5, libqt5widgets5, libqt5core5a, ${shlibs:Depends}, ${misc:Depends}
+Description: Simple batch progressing of picture files.
+ SimplePictureTool is a simple tool for batch processing 
+ of .PNG or .JPG image files in a simple way.
+ It allows removing metadata from image files and scaling 
+ the image size and adjusting the image quality 
+ using ImageMagick. 
