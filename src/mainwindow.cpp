@@ -107,6 +107,9 @@ void MainWindow::startProcess()
     case 7:
         _msg.critical(0, "Error", "Error. Please check your ImageMagick installation.");
         break;
+    case 8:
+        _msg.information(0, "Information", "User abort.");
+        break;
     }
 }
 
@@ -146,6 +149,11 @@ int MainWindow::getStatus()
                          for(int i=0; i<pictureFiles.size(); i++)
                          {
                              progstatus.setValue(i);
+
+                             if (progstatus.wasCanceled())
+                             {
+                                return 8;
+                             }
 
                              file=ui->lineEdit->text()+"/"+pictureFiles.at(i);
                              if(ui->checkBox->isChecked() == true)
