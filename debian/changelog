@@ -1,4 +1,10 @@
-simplepicturetool (0.0.2-1) UNRELEASED; urgency=medium
+simplepicturetool (0.0.3-1) UNRELEASED; urgency=medium
+
+  * The image quality and size are set using with the "imgp" tool. (Allows the modification of images with large image size.)
+
+ -- Patrice Coni <patrice.coni-dev@yandex.com>  Sat, 17 Dec 2022 18:33:44 +0100
+
+simplepicturetool (0.0.2-1) unstable; urgency=medium
 
   * Progressbar object in the QWidget of MainWindow removed.
   * Addition: Display progressbar with QProgressDialog

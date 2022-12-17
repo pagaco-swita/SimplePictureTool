@@ -39,7 +39,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     QString confFilePath;
-    bool doProcess(QStringList arguments);
+    bool doProcess(QString command, QStringList arguments);
     int getStatus();
     void saveSettings();
     void loadSettings();

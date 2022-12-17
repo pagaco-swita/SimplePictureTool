@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
     w.setMinimumSize(430,300);
     w.setGeometry(QStyle::alignedRect(Qt::LeftToRight,
          Qt::AlignCenter, w.size(), qApp->desktop()->availableGeometry()));
-    w.setWindowTitle(QApplication::applicationName());
+    w.setWindowTitle(QApplication::applicationName()+" - v0.0.3");
     w.show();
     return a.exec();
 }

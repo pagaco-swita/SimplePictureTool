@@ -26,6 +26,7 @@
 #include <QSettings>
 #include <QCloseEvent>
 #include <QProgressDialog>
+#include <QDebug>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -129,8 +130,8 @@ int MainWindow::getStatus()
             {
                 QStringList _arguments;
 
-                QString qualityValue = QString::number(ui->spinBox->value())+"%";
-                QString scaleValue = QString::number(ui->spinBox_2->value())+"%";
+                QString qualityValue = QString::number(ui->spinBox->value());
+                QString scaleValue = QString::number(ui->spinBox_2->value());
 
                 QDir pictureDir(ui->lineEdit->text());
 
@@ -156,23 +157,30 @@ int MainWindow::getStatus()
                              }
 
                              file=ui->lineEdit->text()+"/"+pictureFiles.at(i);
-                             if(ui->checkBox->isChecked() == true)
-                             {
-                                 _arguments << "-strip" << file << file;
 
-                                 if(doProcess(_arguments)==false)
+                             if(file.contains("\'"))
+                             {
+                                 file.replace("\'", "\'\\'\'");
+                             }
+
+                             if(ui->checkBox_2->isChecked()==true)
+                             {
+                                 _arguments << "-q" << qualityValue << "-x" << scaleValue << "-w" << file;
+
+                                 if(doProcess("imgp", _arguments)==false)
                                  {
+
                                      return 7;
                                  }
 
                                  _arguments.clear();
                              }
 
-                             if(ui->checkBox_2->isChecked()==true)
+                             if(ui->checkBox->isChecked() == true)
                              {
-                                 _arguments << "-quality" << qualityValue+"%" << "-scale" << scaleValue+"%" << file << file;
+                                 _arguments << "-strip" << file << file;
 
-                                 if(doProcess(_arguments)==false)
+                                 if(doProcess("convert", _arguments)==false)
                                  {
                                      return 7;
                                  }
@@ -210,11 +218,11 @@ int MainWindow::getStatus()
     return 8;
 }
 
-bool MainWindow::doProcess(QStringList arguments)
+bool MainWindow::doProcess(QString command, QStringList arguments)
 {
     QProcess proc;
 
-    proc.start("convert", arguments);
+    proc.start(command, arguments);
     proc.waitForFinished();
     proc.close();
 
