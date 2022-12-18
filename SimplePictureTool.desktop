@@ -2,7 +2,6 @@
 Type=Application
 Exec=/usr/bin/SimplePictureTool
 Name=SimplePictureTool
-Version=0.0.3
 Comment=A simple GUI that using the ImageMagick software, for batch processing of .PNG or .JPG image files in a simple way.
 Terminal=false
 Keywords=background;wallpaper;bing;
