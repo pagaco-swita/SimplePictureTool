@@ -17,7 +17,7 @@ A simple GUI that using the ImageMagick and imgp software, for batch processing 
 #### How to build the Application:
 
 ```
-$ sudo apt-get install libkf5filemetadata-dev locales qt5-qmake-bin libkf5coreaddons-dev libkf5config-dev qtbase5-dev tzdata qtchooser qt5-qmake libqt5opengl5-dev baloo-kf5-dev qtbase5-dev-tools imagemagick libqt5gui5 libqt5widgets5 libqt5core5a
+$ sudo apt-get install libkf5filemetadata-dev locales qt5-qmake-bin libkf5coreaddons-dev libkf5config-dev qtbase5-dev tzdata qtchooser qt5-qmake libqt5opengl5-dev baloo-kf5-dev qtbase5-dev-tools imagemagick imgp libqt5gui5 libqt5widgets5 libqt5core5a
 
 $ cd ./src
 $ qmake (or qmake -qt5)
