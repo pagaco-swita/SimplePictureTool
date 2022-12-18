@@ -168,7 +168,6 @@ int MainWindow::getStatus()
 
                                  if(doProcess("imgp", _arguments)==false)
                                  {
-
                                      return 7;
                                  }
 
