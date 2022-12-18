@@ -26,7 +26,6 @@
 #include <QSettings>
 #include <QCloseEvent>
 #include <QProgressDialog>
-#include <QDebug>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -106,7 +105,7 @@ void MainWindow::startProcess()
         _msg.information(0, "Information", "Please select a directory.");
         break;
     case 7:
-        _msg.critical(0, "Error", "Error. Please check your ImageMagick installation.");
+        _msg.critical(0, "Error", "An error has occurred.");
         break;
     case 8:
         _msg.information(0, "Information", "User abort.");
