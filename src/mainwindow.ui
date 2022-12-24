@@ -51,7 +51,7 @@
       <item>
        <widget class="QCheckBox" name="checkBox">
         <property name="text">
-         <string>Remove meta-data from Picture</string>
+         <string>Remove meta-data from picture</string>
         </property>
        </widget>
       </item>
