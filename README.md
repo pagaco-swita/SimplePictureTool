@@ -25,4 +25,4 @@ $ make -f Makefile
 ``` 
 
 #### Screenshot: <br />
-![Screenshot](https://github.com/pagaco-swita/SimplePictureTool/blob/main/Screenshot-Simple-PictureTool.png)
+![Screenshot](https://github.com/pagaco-swita/SimplePictureTool/blob/main/screenshot.png)
